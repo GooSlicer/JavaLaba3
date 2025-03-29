@@ -21,8 +21,8 @@ public class TrainingCenter {
             TrainingCalculator calculator = new TrainingCalculator(student);
             LocalDateTime endDate = calculator.calculateEndDate();
 
-            String timeRemaining = calculator.getTimeRemaining(currentDate);
-            String timePassed = calculator.getTimePassed(currentDate);
+            String timeRemaining = calculator.getTime(currentDate, false);
+            String timePassed = calculator.getTime(currentDate, true);
 
             if (timeRemaining != null) {
                 System.out.println(student.getName() + " (" + student.getProgram() + ") - Обучение не закончено. " +

@@ -23,7 +23,7 @@ public class Main {
         Program javaBasicsProgram = new Program("Java Basics", javaBasicsCourses);
         Program javaAdvancedProgram = new Program("Java Advanced", javaAdvancedCourses);
 
-        LocalDateTime startDate = LocalDateTime.of(2023, 10, 1, 10, 0);
+        LocalDateTime startDate = LocalDateTime.of(2023, 1, 1, 10, 0);
         Student ivanov = new Student("Иванов Иван", javaBasicsProgram, startDate);
         Student petrov = new Student("Петров Петр", javaAdvancedProgram, startDate);
 
@@ -31,7 +31,7 @@ public class Main {
         trainingCenter.addStudent(ivanov);
         trainingCenter.addStudent(petrov);
 
-        LocalDateTime currentDate = LocalDateTime.of(2023, 10, 15, 18, 0);
+        LocalDateTime currentDate = LocalDateTime.of(2023, 1, 15, 18, 0);
 
         trainingCenter.generateReport(currentDate);
     }
